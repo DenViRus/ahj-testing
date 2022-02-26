@@ -82,6 +82,7 @@
   border: 3px solid black;
   border-radius: 10px;
   transition: background-color 0.5s ease-out;
+  cursor: auto;
 }
 
 .validator-input:hover {
@@ -131,8 +132,8 @@
 }
 
 .validator-message-container {
-  display: none;
   margin-top: 2%;
+  display: none;
 }
 
 .validator-message {

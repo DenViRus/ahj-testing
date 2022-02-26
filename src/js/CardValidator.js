@@ -1,6 +1,3 @@
-import valid from '../img/valid.png';
-import invalid from '../img/invalid.png';
-
 export default class CardValidator {
   constructor(container, cards) {
     this.container = container;
@@ -37,8 +34,10 @@ export default class CardValidator {
     this.validatorInput.className = 'validator-input';
     this.validatorInput.setAttribute('id', 'validatorInput');
     this.validatorInput.setAttribute('data-id', 'validatorInput');
-    this.validatorInput.setAttribute('type', 'text');
-    this.validatorInput.setAttribute('maxLength', '20');
+    this.validatorInput.setAttribute('autocomplete', 'off');
+    this.validatorInput.setAttribute('type', 'search');
+    this.validatorInput.setAttribute('maxLength', '19');
+    this.validatorInput.setAttribute('placeholder', 'Enter card number');
 
     this.validatorSignControl = document.createElement('div');
     this.validatorSignControl.className = 'validator-sign-control';
