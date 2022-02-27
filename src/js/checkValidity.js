@@ -3,7 +3,7 @@ export default function checkValidity(value) {
   const currentValueLen = currentValue.length;
   let result = null;
   if (/\D/gi.test(currentValue) || currentValueLen < 12) {
-    result = 'invalid';
+    result = 'not valid';
   } else {
     const numArr = [];
 
@@ -29,7 +29,7 @@ export default function checkValidity(value) {
     }
 
     const checkSum = (10 - (sum % 10)) % 10;
-    result = (checkSum === ctrlNumb) ? 'valid' : 'invalid';
+    result = checkSum === ctrlNumb ? 'valid' : 'not valid';
   }
 
   return result;

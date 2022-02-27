@@ -53,9 +53,6 @@
   filter: none;
 }
 
-.validator-form-container {
-}
-
 .validator-form {
   display: flex;
   width: 100%;
@@ -67,9 +64,6 @@
   max-height: 100px;
   min-height: 50px;
   width: 50%;
-}
-
-.validator-label {
 }
 
 .validator-input {
@@ -136,11 +130,26 @@
   display: none;
 }
 
-.validator-message {
+.validator-message-validity {
   font-size: 100%;
   font-weight: inherit;
+  padding-right: 1%;
+}
+
+.validator-message-paysistem {
+  font-size: 100%;
+  font-weight: inherit;
+  padding-right: 1%;
 }
 
 .active {
   display: block;
+}
+
+.valid {
+  color: green;
+}
+
+.not-valid {
+  color: red;
 }

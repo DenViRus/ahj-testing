@@ -15,11 +15,11 @@ export default function checkPaymentSistem(value, data) {
       && currentValueLen > 12
       && itemNumbLength.includes(currentValueLen)
     ) {
-      result = item.id;
+      result = item;
     }
   });
 
-  result = (result === null) ? 'not determined' : result;
+  result = result === null ? 'not determined' : result;
 
   return result;
 }

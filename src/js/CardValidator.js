@@ -58,9 +58,13 @@ export default class CardValidator {
     this.validatorMessageContainer = document.createElement('div');
     this.validatorMessageContainer.className = 'validator-container validator-message-container';
 
-    this.validatorMessage = document.createElement('p');
-    this.validatorMessage.className = 'validator-message';
-    this.validatorMessage.textContent = '';
+    this.validatorMessageValidity = document.createElement('span');
+    this.validatorMessageValidity.className = 'validator-message-validity';
+    this.validatorMessageValidity.textContent = '';
+
+    this.validatorMessagePaysistem = document.createElement('span');
+    this.validatorMessagePaysistem.className = 'validator-message-paysistem';
+    this.validatorMessagePaysistem.textContent = '';
 
     for (let i = 0, len = this.cards.length; i < len; i++) {
       this.validatorLogoItem = document.createElement('li');
@@ -89,7 +93,8 @@ export default class CardValidator {
 
     this.validatorLogoContainer.append(this.validatorLogoList);
     this.validatorFormContainer.append(this.validatorForm);
-    this.validatorMessageContainer.append(this.validatorMessage);
+    this.validatorMessageContainer.append(this.validatorMessageValidity);
+    this.validatorMessageContainer.append(this.validatorMessagePaysistem);
 
     this.cardValidatorBox.append(this.validatorLogoContainer);
     this.cardValidatorBox.append(this.validatorFormContainer);

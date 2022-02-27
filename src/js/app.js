@@ -7,6 +7,10 @@ const cardValidator = new CardValidator(mainContainer, cardsData);
 cardValidator.drawCardValidator();
 
 const dataContainer = document.getElementById('mainContainer');
-const cardValidatorController = new CardValidatorController(dataContainer, cardsData);
+const cardValidatorController = new CardValidatorController(
+  dataContainer,
+  cardsData,
+);
 cardValidatorController.getValidatorData();
 cardValidatorController.checkCard();
+cardValidatorController.checkInput();
