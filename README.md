@@ -1,4 +1,4 @@
-# hw-testing  [![Build status](https://ci.appveyor.com/api/projects/status/ewqewithekedm2ng?svg=true)](https://ci.appveyor.com/project/DenViRus/ahj-testing)  
+# hw-testing [![Build status](https://ci.appveyor.com/api/projects/status/ewqewithekedm2ng?svg=true)](https://ci.appveyor.com/project/DenViRus/ahj-testing) [[Github Pages](https://denvirus.github.io/ahj-testing/)]
 
 ### Credit Card Validator
 
