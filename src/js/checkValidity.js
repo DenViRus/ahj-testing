@@ -29,7 +29,7 @@ export default function checkValidity(value) {
     }
 
     const checkSum = (10 - (sum % 10)) % 10;
-    result = (checkSum === ctrlNumb && sum !== 0) ? 'valid' : 'not valid';
+    result = checkSum === ctrlNumb && sum !== 0 ? 'valid' : 'not valid';
   }
 
   return result;

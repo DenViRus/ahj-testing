@@ -6,7 +6,7 @@
   "author": "Denis Efremenko <denvirus83@mail.ru>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.js",
+    "start": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint .",
     "test": "jest --testPathPattern=./src/",
@@ -36,12 +36,15 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "core-js": "3",
+    "core-js": "3.18.2",
     "push-dir": "^0.4.1"
   },
   "jest": {
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js"
-    }
+    },
+    "testPathIgnorePatterns": [
+      "src/js/__tests__/e2e/e2e.server.js"
+    ]
   }
 }
